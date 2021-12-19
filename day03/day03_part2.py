@@ -29,5 +29,7 @@ def findMostCommonBit(bitArray):
     total = sum(int(digit) for digit in bitArray)
     return '1' if total > length/2 else '0'
 
-a = [line[0] for line in input]
-print(findMostCommonBit(a))
+def transformInput(a):
+    line_length = len(a[0])
+    for i in range(line_length):
+        bit_place = 0
